@@ -1,3 +1,9 @@
+resources:
+  repositories:
+    - repository: tools_repo       # A local alias for the repo in your pipeline
+      type: git                   # Repository type
+      name: FirstCICDProject/PlaywrightInit.git # Format: <ProjectName>/<RepoName>
+      ref: refs/heads/main
 trigger:
 - master
 
